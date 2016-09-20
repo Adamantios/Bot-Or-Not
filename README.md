@@ -2,7 +2,9 @@
 A model, which predicts if a twitter user is a Bot or not. Written in Python 2.7
 
 ##Input
-Bot Or Not takes as an input a folder which contains the twitter users data in json format.
+Bot Or Not takes as an input a folder which contains the twitter users data in json format,  
+created from [Twitter Profile Parser](https://github.com/Adamantios/Twitter-Profile-Parser/blob/master/README.md)
+with an extra field `is_bot` which is either True or False.
 
 ##Requirements
 numpy  
