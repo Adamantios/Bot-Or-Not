@@ -11,7 +11,7 @@ def clean_html(tweets):
     return [regex.sub('(\\<.*?\\>)', '', text) for text in tweets if text is not None]
 
 
-def detwittify(tweets):
+def detweettify(tweets):
     """Remove characteristics which aren't "natural" text, like hashtags, urls and usernames.
 
     tweets -- collection - the tweets to clean.
