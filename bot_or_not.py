@@ -1,7 +1,7 @@
 import datetime
 import time
 
-from models.create_model import soac_linear_svc
+from models.create_model import tfidf_vectorizer_linear_svc
 from parsers.arguments_parser import parse_arguments
 from parsers.json_parser import parse_tweets
 from utilities.file_management import log
@@ -20,10 +20,9 @@ def main():
 
     log('Loaded %s users...' % len(tweets_dataset))
     log('Creating model for %s...' % task)
-    model, model_name = soac_linear_svc()
+    model, params = tfidf_vectorizer_linear_svc()
 
-    log('\n---------------- Performing Grid Search CV ----------------')
-    results = cross_validation(tweets_dataset, model, args.num_folds)
+    model_name, results = cross_validation(tweets_dataset, params, model, args.num_folds)
 
     log('\n------------------------- Results -------------------------')
     log('Results for %s with estimator:\n %s' % (task, model_name))
