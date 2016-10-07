@@ -1,5 +1,5 @@
 # Bot-Or-Not
-A model, which predicts if a twitter user is a Bot or not. Written in Python 2.7
+A project consisting of models, which predict if a twitter user is a Bot or not. Written in Python 2.7
 
 ##Input
 Bot Or Not takes as an input a folder which contains the twitter users data in json format,  
