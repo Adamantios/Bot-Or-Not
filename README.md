@@ -1,16 +1,16 @@
 # Bot-Or-Not
 A project consisting of models, which predict if a twitter user is a Bot or not. Written in Python 2.7
 
-##Input
+## Input
 Bot Or Not takes as an input a folder which contains the twitter users data in json format,  
 created from [Twitter Profile Parser](https://github.com/Adamantios/Twitter-Profile-Parser/blob/master/README.md)
 with an extra field `is_bot` which is either True or False.
 
-##Requirements
+## Requirements
 numpy  
 scikit_learn
 
-##Usage
+## Usage
 ```
 bot_or_not.py [-h] -i IN_FOLDER [-n NUM_FOLDS]
 
@@ -23,11 +23,11 @@ optional arguments:
   -n NUM_FOLDS, --numfolds NUM_FOLDS
                         Number of folds to use in cross validation
 ```
-##Results
+## Results
 A result.txt file is being created, containing statistics and information about the results of the model.  
 The results are also being printed in the console.
 
-##Example results for 1000 users - 500 bots and 500 non bots.
+## Example results for 1000 users - 500 bots and 500 non bots.
 ```
 ------------- Created at: 20/09/2016 10:55:59 -------------
 Loading dataset...
