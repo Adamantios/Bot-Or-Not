@@ -1,5 +1,5 @@
 # Bot-Or-Not
-A project consisting of models, which predict if a twitter user is a Bot or not. Written in Python 2.7
+A project using a model or a combination of models, in order to be trained to predict if a twitter user is a Bot or not. Written in Python 2.7
 
 ## Input
 Bot Or Not takes as an input a folder which contains the twitter users data in json format,  
@@ -52,3 +52,6 @@ Results for Bot detection with estimator:
 Grid Scores: [mean: 0.86300, std: 0.02161, params: {}]
 Runtime: 8.21899986267 seconds.
 ```
+
+## Future Expansion
+Pass two different lists of twitter users. One to train the model and one to predict if its users are bots or not.
