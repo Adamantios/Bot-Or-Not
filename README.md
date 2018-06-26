@@ -53,5 +53,5 @@ Grid Scores: [mean: 0.86300, std: 0.02161, params: {}]
 Runtime: 8.21899986267 seconds.
 ```
 
-## Future Expansion
+## Future Enhancement
 Pass two different lists of twitter users. One to train the model and one to predict if its users are bots or not.
